@@ -1,0 +1,81 @@
+[gd_scene load_steps=3 format=3 uid="uid://cl453bx2ml4x2"]
+
+[ext_resource type="Texture2D" uid="uid://bbugcllmncpp0" path="res://cat-removebg-preview.png" id="1_wrk8b"]
+[ext_resource type="Texture2D" uid="uid://ns0kv4u4om75" path="res://arrow back.png" id="2_6h842"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 57.0
+offset_right = 813.0
+offset_bottom = 140.0
+theme_override_font_sizes/font_size = 60
+text = "Editar Perfil"
+
+[node name="Button" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 482.0
+offset_top = 499.0
+offset_right = 652.0
+offset_bottom = 577.0
+text = "SALVAR"
+
+[node name="Button2" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 458.0
+offset_top = 206.0
+offset_right = 648.0
+offset_bottom = 269.0
+text = "Editar Imagem de Perfil"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 196.0
+offset_top = 331.0
+offset_right = 924.0
+offset_bottom = 522.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Nome do usuário:             "
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 2
+placeholder_text = "Insira o Novo Nome"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Senha:                                 "
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 2
+placeholder_text = "Insira a Nova Senha"
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "👁"
+
+[node name="Cat-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(335, 225)
+scale = Vector2(0.75, 0.569444)
+texture = ExtResource("1_wrk8b")
+
+[node name="ArrowBack" type="Sprite2D" parent="."]
+position = Vector2(120, 70)
+scale = Vector2(0.243164, 0.200195)
+texture = ExtResource("2_6h842")

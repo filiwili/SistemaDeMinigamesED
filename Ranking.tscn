@@ -1,0 +1,95 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq1ccqnucnsit"]
+
+[ext_resource type="Texture2D" uid="uid://ns0kv4u4om75" path="res://arrow back.png" id="1_7h2db"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 111.0
+offset_right = 955.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 60
+text = "Ranking dos Jogadores"
+
+[node name="Ranking" type="ScrollContainer" parent="UI"]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 264.0
+offset_right = 728.0
+offset_bottom = 490.0
+
+[node name="Jogadores" type="VBoxContainer" parent="UI/Ranking"]
+layout_mode = 2
+
+[node name="Jogador1" type="HBoxContainer" parent="UI/Ranking/Jogadores"]
+layout_mode = 2
+
+[node name="Ranking1" type="Label" parent="UI/Ranking/Jogadores/Jogador1"]
+layout_mode = 2
+text = "Ranking 1   "
+
+[node name="Jogador1" type="Label" parent="UI/Ranking/Jogadores/Jogador1"]
+layout_mode = 2
+text = "Jogador 1   "
+
+[node name="Score1" type="Label" parent="UI/Ranking/Jogadores/Jogador1"]
+layout_mode = 2
+text = "500 pontos"
+
+[node name="Jogador2" type="HBoxContainer" parent="UI/Ranking/Jogadores"]
+layout_mode = 2
+
+[node name="Ranking2" type="Label" parent="UI/Ranking/Jogadores/Jogador2"]
+layout_mode = 2
+text = "Ranking 2   "
+
+[node name="Jogador2" type="Label" parent="UI/Ranking/Jogadores/Jogador2"]
+layout_mode = 2
+text = "Jogador 2   "
+
+[node name="Score2" type="Label" parent="UI/Ranking/Jogadores/Jogador2"]
+layout_mode = 2
+text = "400 pontos"
+
+[node name="Jogador3" type="HBoxContainer" parent="UI/Ranking/Jogadores"]
+layout_mode = 2
+
+[node name="Ranking3" type="Label" parent="UI/Ranking/Jogadores/Jogador3"]
+layout_mode = 2
+text = "Ranking 3   "
+
+[node name="Jogador3" type="Label" parent="UI/Ranking/Jogadores/Jogador3"]
+layout_mode = 2
+text = "Jogador 3   "
+
+[node name="Score3" type="Label" parent="UI/Ranking/Jogadores/Jogador3"]
+layout_mode = 2
+text = "300 pontos"
+
+[node name="Jogador4" type="HBoxContainer" parent="UI/Ranking/Jogadores"]
+layout_mode = 2
+
+[node name="RankingVoce" type="Label" parent="UI/Ranking/Jogadores/Jogador4"]
+layout_mode = 2
+text = "Ranking 4   "
+
+[node name="Voce" type="Label" parent="UI/Ranking/Jogadores/Jogador4"]
+layout_mode = 2
+text = "Você               "
+
+[node name="ScoreVoce" type="Label" parent="UI/Ranking/Jogadores/Jogador4"]
+layout_mode = 2
+text = "0 pontos"
+
+[node name="ArrowBack" type="Sprite2D" parent="."]
+position = Vector2(131, 82)
+scale = Vector2(0.243164, 0.200195)
+texture = ExtResource("1_7h2db")
