@@ -1,4 +1,4 @@
-# SistemaDeMinigamesED
+# LogicShuffle
 Projeto criado com a pretensão inicial como meio de obter pontos para a Engenharia de Software III do curso tecnólogo em Análise e Desenvolvimento de Sistemas, com expectativa de eventualmente ser apresentado como um Trabalho de Graduação(TG).
 
 # Membros:
