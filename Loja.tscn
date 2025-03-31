@@ -1,0 +1,151 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2v7hdnj2vcww"]
+
+[ext_resource type="Texture2D" uid="uid://ns0kv4u4om75" path="res://arrow back.png" id="1_jogn3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Tema1" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 204.0
+offset_right = 501.0
+offset_bottom = 277.0
+theme_override_colors/font_color = Color(0.772549, 0.00784314, 0.00784314, 1)
+theme_override_font_sizes/font_size = 25
+text = "Desbloquear Borda 1"
+
+[node name="Tema2" type="Label" parent="UI/Tema1"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 96.0
+offset_right = 271.0
+offset_bottom = 169.0
+theme_override_colors/font_shadow_color = Color(0, 0.866667, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Desbloquear Borda 2"
+
+[node name="Tema3" type="Label" parent="UI/Tema1/Tema2"]
+layout_mode = 0
+offset_top = 111.0
+offset_right = 272.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(0.67451, 0, 0.635294, 1)
+theme_override_font_sizes/font_size = 25
+text = "Desbloquear Borda 3"
+
+[node name="Tema4" type="Label" parent="UI/Tema1/Tema2/Tema3"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 101.0
+offset_right = 268.0
+offset_bottom = 174.0
+theme_override_colors/font_color = Color(0.632011, 0.622309, 0.782295, 1)
+theme_override_font_sizes/font_size = 25
+text = "Desbloquear Borda 4"
+
+[node name="Money" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 811.0
+offset_top = 101.0
+offset_right = 976.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 25
+text = "Dinheiro Aqui"
+
+[node name="Coin1" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 588.0
+offset_top = 206.0
+offset_right = 740.0
+offset_bottom = 241.0
+theme_override_colors/font_color = Color(0.772549, 0.00784314, 0.00784314, 1)
+theme_override_font_sizes/font_size = 25
+text = "borda 1 aqui"
+
+[node name="Coin2" type="Label" parent="UI/Coin1"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 97.0
+offset_right = 129.0
+offset_bottom = 132.0
+theme_override_colors/font_shadow_color = Color(0, 0.866667, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "borda 2 aqui"
+
+[node name="Coin3" type="Label" parent="UI/Coin1/Coin2"]
+layout_mode = 0
+offset_top = 107.0
+offset_right = 130.0
+offset_bottom = 142.0
+theme_override_colors/font_color = Color(0.67451, 0, 0.635294, 1)
+theme_override_font_sizes/font_size = 25
+text = "borda 3 aqui"
+
+[node name="Coin4" type="Label" parent="UI/Coin1/Coin2/Coin3"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 107.0
+offset_right = 126.0
+offset_bottom = 142.0
+theme_override_colors/font_color = Color(0.631373, 0.623529, 0.780392, 1)
+theme_override_font_sizes/font_size = 25
+text = "borda 4 aqui"
+
+[node name="Comprar1" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 205.0
+offset_right = 964.0
+offset_bottom = 248.0
+theme_override_colors/font_color = Color(0.588235, 0.498039, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Comprar Borda"
+
+[node name="Comprar2" type="Button" parent="UI/Comprar1"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 104.0
+offset_right = 189.0
+offset_bottom = 147.0
+theme_override_colors/font_color = Color(0.588235, 0.498039, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Comprar Borda"
+
+[node name="Comprar3" type="Button" parent="UI/Comprar1/Comprar2"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 98.0
+offset_right = 187.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(0.588235, 0.498039, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Comprar Borda"
+
+[node name="Comprar4" type="Button" parent="UI/Comprar1/Comprar2/Comprar3"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 96.0
+offset_right = 183.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(0.588235, 0.498039, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Comprar Borda"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 426.0
+offset_top = 56.0
+offset_right = 667.0
+offset_bottom = 139.0
+theme_override_font_sizes/font_size = 60
+text = "Loja"
+
+[node name="ArrowBack" type="Sprite2D" parent="."]
+position = Vector2(124, 95)
+scale = Vector2(0.243164, 0.200195)
+texture = ExtResource("1_jogn3")

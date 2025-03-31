@@ -1,0 +1,91 @@
+[gd_scene load_steps=3 format=3 uid="uid://qbuh1qcqkey7"]
+
+[ext_resource type="Texture2D" uid="uid://qbbsexlyc1d5" path="res://bordertest.png" id="1_nn38w"]
+[ext_resource type="Texture2D" uid="uid://ns0kv4u4om75" path="res://arrow back.png" id="2_lcyg2"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Bordertest" type="Sprite2D" parent="."]
+position = Vector2(576, 325)
+scale = Vector2(1.0729, 1.04026)
+texture = ExtResource("1_nn38w")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HSlider3" type="HSlider" parent="UI"]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 317.0
+offset_right = 897.0
+offset_bottom = 333.0
+
+[node name="HSlider2" type="HSlider" parent="UI"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 229.0
+offset_right = 899.0
+offset_bottom = 245.0
+
+[node name="Musica" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 220.0
+offset_right = 334.0
+offset_bottom = 279.0
+theme_override_colors/font_color = Color(0.286275, 0.32549, 0.478431, 1)
+text = "Volume da música"
+
+[node name="Efeitos" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 306.0
+offset_right = 359.0
+offset_bottom = 365.0
+theme_override_colors/font_color = Color(0.286275, 0.32549, 0.478431, 1)
+text = "Volume dos efeitos sonoros"
+
+[node name="FullScreen" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 399.0
+offset_right = 374.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0.286275, 0.32549, 0.478431, 1)
+text = "Tela cheia / janela"
+
+[node name="CheckBox" type="CheckBox" parent="UI"]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 363.0
+offset_right = 559.0
+offset_bottom = 468.0
+theme_override_colors/font_color = Color(0.286275, 0.32549, 0.478431, 1)
+theme_override_colors/font_pressed_color = Color(0.909804, 0.909804, 0.909804, 1)
+text = "Tela Cheia"
+
+[node name="Button" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 528.0
+offset_right = 658.0
+offset_bottom = 559.0
+theme_override_colors/font_color = Color(0.588235, 0.498039, 0, 1)
+text = "Redefinir Configurações "
+
+[node name="Musica" type="Label" parent="."]
+offset_left = 256.0
+offset_top = 73.0
+offset_right = 914.0
+offset_bottom = 156.0
+theme_override_colors/font_color = Color(0.639216, 0.360784, 0.0352941, 1)
+theme_override_font_sizes/font_size = 60
+text = "Configurações de Jogo "
+
+[node name="ArrowBack" type="Sprite2D" parent="."]
+position = Vector2(133, 101)
+scale = Vector2(0.243164, 0.200195)
+texture = ExtResource("2_lcyg2")

@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://das5vkajeaooj"]
+
+[ext_resource type="Texture2D" uid="uid://c4f22x86qme2o" path="res://DALL·E 2025-03-23 21.13.36 - Crie um logotipo para um jogo de lógica baseado em estruturas de dados. O design deve ser moderno e minimalista, utilizando uma paleta de cores que va.webp" id="1_lspci"]
+[ext_resource type="Texture2D" uid="uid://b8vyibmpwbnwt" path="res://minimal3.webp" id="1_t20a4"]
+[ext_resource type="Texture2D" uid="uid://ns0kv4u4om75" path="res://arrow back.png" id="2_mgaki"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(292, 385)
+
+[node name="Minimal3" type="Sprite2D" parent="."]
+position = Vector2(285, -68)
+scale = Vector2(1.89352, 1.83882)
+texture = ExtResource("1_t20a4")
+
+[node name="ArrowBack" type="Sprite2D" parent="Minimal3"]
+position = Vector2(-232.619, -114.644)
+scale = Vector2(0.128869, 0.124931)
+texture = ExtResource("2_mgaki")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MainContainer" type="VBoxContainer" parent="UI"]
+layout_mode = 0
+offset_right = 406.0
+offset_bottom = 66.0
+
+[node name="Minigame1" type="Button" parent="UI/MainContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.588235, 0.498039, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Minigame Pilha/Fila/Deque"
+
+[node name="Minigame2" type="Button" parent="UI/MainContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.588235, 0.498039, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Minigame de Criptografia"
+
+[node name="Label" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 68.0
+offset_top = -141.0
+offset_right = 516.0
+offset_bottom = -58.0
+theme_override_colors/font_color = Color(0.639216, 0.360784, 0.0352941, 1)
+theme_override_font_sizes/font_size = 60
+text = "LOGIC SHUFFLE"
+
+[node name="Dall·e2025-03-2321_13_36-CrieUmLogotipoParaUmJogoDeLógicaBaseadoEmEstruturasDeDados_ODesignDeveSerModernoEMinimalista,UtilizandoUmaPaletaDeCoresQueVa" type="Sprite2D" parent="."]
+position = Vector2(293, -234)
+scale = Vector2(0.300079, 0.183533)
+texture = ExtResource("1_lspci")
